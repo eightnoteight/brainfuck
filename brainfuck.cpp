@@ -23,6 +23,11 @@
 int main(int argc, char const *argv[])
 {
 	std::ifstream fin(argv[1], std::ios_base::in);
+	if (argc < 2)
+	{
+		std::cout << "you haven't passed any arguments to me!\n";
+		exit(1);
+	}
 	if (!fin)
 	{
 		std::cout << "Oh boy! i couldn't find the brainfuck source file\nmake sure you have the source file";
