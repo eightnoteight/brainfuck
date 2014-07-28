@@ -17,10 +17,16 @@
 #include <algorithm>
 #include <iterator>
 #include <fstream>
-
+#ifdef _WIN32
+#include <conio.h>
+#endif
 int main(int argc, char const *argv[])
 {
 	std::ifstream fin(argv[1], std::ios_base::in);
+	if (!fin)
+	{
+		std::cout << "Oh boy! i couldn't find the brainfuck source file\nmake sure you have the source file";
+	}
 	std::ofstream fout("a.out.c", std::ios_base::out);
 	char ch;
 	fout << "#include <stdio.h>\n#include <stdlib.h>\nint main(int argc, char** argv[]) {" << \
