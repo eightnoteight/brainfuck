@@ -95,7 +95,8 @@ int main(int argc, char const *argv[])
 		std::cout << "actually i couldn't determine your system,\n so i'm only delivering the c file only\n" <<\
 		"please take the pain of compiling it yourself\n";
 		std::cout << "if you are on linux or on windows and yet this insane error occured.\n "<< \
-		"please kick this fool (Srinivas Devaki) at mr.eightnoteight [at] gmail [dot] com";
+		"please kick this fool (Srinivas Devaki) at mr.eightnoteight [at] gmail [dot] com\n" << \
+		"AND raise an issue at \033[33mhttps://github.com/eightnoteight/brainfuck/issues/new\033[0m";
 	#endif
 	return 0;
 }
