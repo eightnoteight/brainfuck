@@ -26,6 +26,7 @@ int main(int argc, char const *argv[])
 	if (!fin)
 	{
 		std::cout << "Oh boy! i couldn't find the brainfuck source file\nmake sure you have the source file";
+		exit(1);
 	}
 	std::ofstream fout("a.out.c", std::ios_base::out);
 	char ch;
